@@ -1,7 +1,7 @@
-//Coś tu powinno być
+const http = require('http');
 
 const srv = http.createServer((req, res) => { //Kiedy przeglądarka wysyła zapytanie...
-    res.setHeader('???', '???'); //...następuje ustawienie odpowiedniego kodowania...
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.end('???'); //...oraz przesłanie odpowiedzi.
 });
 
